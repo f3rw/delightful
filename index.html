@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <title>Welcome Cooks Delight!</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="./assets/img/cd-logo.svg" alt="Cooks Delight Logo">
+            </a>
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#nav-recipe">Recipes</a></li>
+                    <li><a href="#nav-tips">Cooking Tips</a></li>
+                    <li><a href="#nav-about">About Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="auth">
+                <a href="#" class="search">
+                    <img src="./assets/img/i-search.svg" alt="">
+                </a>
+                <a href="#" class="btn btn-subscribe">Subscribe</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="content">
+                    <h1>Unleash Culinary <span style="text-align: center;">Excellence</span></h1>
+                    <p class="ff-roboto">Explore a world of flavors, discover handcrafted recipes, and let the aroma of our passion for cooking fill your kitchen</p>
+                    <a href="#" class="btn">Explore Recipes</a>
+                </div>
+            </div>
+        </section>
+    
+        <section class="explore">
+            <div class="container">
+                <div class="left">
+                    <a href="#" class="btn btn-2">Explore</a>
+                    <h2>OUR DIVERSE <span>PALETTE</span></h2>
+                    <p class="ff-roboto">If you are a breakfast enthusiast, a connoisseur of savory delights, or on the lookout for irresistible desserts, our curated selection has something to satisfy every palate.</p>
+                    <a href="#" class="btn btn-3">See More</a>
+                </div>
+    
+                <div class="right">
+                    <ul>
+                        <li><img src="./assets/img/i-breakfest.svg" alt=""><span class="subtitle">BREAKFEST</span></li>
+                        <li><img src="./assets/img/i-lunch.svg" alt=""><span class="subtitle">LUNCH</span></li>
+                        <li><img src="./assets/img/i-dinner.svg" alt=""><span class="subtitle">DINNER</span></li>
+                        <li><img src="./assets/img/i-dessert.svg" alt=""><span class="subtitle">DESSERT</span></li>
+                        <li><img src="./assets/img/i-quickbite.svg" alt=""><span class="subtitle">QUICK BITE</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    
+        <section class="featured" id="nav-recipe">
+            <div class="container">
+                <div class="top">
+                    <h2>FEATURED RECIPES</h2>
+                    <div class="btn-wrapper">
+                        <button class="prev-btn">&#10094;</button>
+                        <button class="next-btn">&#10095;</button>
+                    </div>
+                </div>
+                <div class="slider swiper">
+                    <div class="slider-wrapper">
+                        <div class="slide swiper-wrapper">
+                            <div class="card swiper-slide">
+                                <img src="./assets/img/Savory Chicken.png" alt="Savory Chicken">
+                                <div class="card-content">
+                                    <h3>Savory Herb-Infused Chicken</h3>
+                                    <p class="ff-roboto">Indulge in the rich and savory symphony of flavors with our Savory Herb-Infused Chicken</p>
+                                    <div class="card-content-bottom">
+                                        <span>40 MIN - EASY PREP - 3 SERVES</span>
+                                        <a href="#" class="btn btn-3">View Recipe</a>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="card swiper-slide">
+                                <img src="./assets/img/Chocolate Mousse.png" alt="Chocolate Mousse">
+                                <div class="card-content">
+                                    <h3>Decadent Chocolate Mousse</h3>
+                                    <p class="ff-roboto">Dive into the velvety indulgence of our Decadent Chocolate Mousse. A dessert that transcends sweetness!</p>
+                                    <div class="card-content-bottom">
+                                        <span>30 MIN - MEDIUM PREP - 4 SERVES</span>
+                                        <a href="#" class="btn btn-3">View Recipe</a>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="card swiper-slide">
+                                <img src="./assets/img/vegan-chocolate-cake-sq.jpg" alt="Savory Chicken">
+                                <div class="card-content">
+                                    <h3>Vegan Chocolate Cake</h3>
+                                    <p class="ff-roboto">A rich and moist chocolate cake that's completely vegan and utterly delicious. It's finished with luscious 'buttercream' and seasonal fruits</p>
+                                    <div class="card-content-bottom">
+                                        <span>40 MIN - MEDIUM PREP - 8 SERVES</span>
+                                        <a href="#" class="btn btn-3">View Recipe</a>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="card swiper-slide">
+                                <img src="./assets/img/California-Avocado-Toast-Three-Ways.jpeg" alt="Savory Chicken">
+                                <div class="card-content">
+                                    <h3>Avocado Toast</h3>
+                                    <p class="ff-roboto">A simple yet delicious toast topped with mashed avocado, cherry tomatoes, and a sprinkle of sea salt.</p>
+                                    <div class="card-content-bottom">
+                                        <span>5 MIN - EASY PREP - 1 SERVE</span>
+                                        <a href="#" class="btn btn-3">View Recipe</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="recipes" id="nav-tips">
+            <div class="container">
+                <div class="title">
+                    <a href="#" class="btn btn-2">Recipes</a>
+                    <h2>EMBARK ON A <span>JOURNEY</span></h2>
+                    <p class="ff-roboto">With our diverse collection of recipes we have something to satisfy every palate.</p>
+                </div>
+    
+                <div class="cards">
+                    <div class="card">
+                        <img src="./assets/img/Savory Chicken.png" alt="Savory Chicken">
+                        <div class="card-content">
+                            <h3>Savory Herb-Infused Chicken</h3>
+                            <p class="ff-roboto">Indulge in the rich and savory symphony of flavors with our Savory Herb-Infused Chicken</p>
+                            <div class="card-content-bottom">
+                                <span>40 MIN - EASY PREP - 3 SERVES</span>
+                                <a href="#" class="btn btn-3">View Recipe</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+                        <img src="./assets/img/lemon-recipe.png" alt="Lemon Garlic Grilled Chicken">
+                        <div class="card-content">
+                            <h3>Lemon Garlic Grilled Chicken</h3>
+                            <p class="ff-roboto">Experience the perfect blend of zesty lemon and aromatic garlic with this roasted chicken recipe</p>
+                            <div class="card-content-bottom">
+                                <span>1 hour - hard prep - 4 serves</span>
+                                <a href="#" class="btn btn-3">View Recipe</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card relative">
+                        <img src="./assets/img/quinoa-recipe.png" alt="Quinoa Veggie Stir-Fry">
+                        <img class="vegan-tag" src="./assets/img/Vegan Tag.svg" alt="vegan tag">
+                        <div class="card-content">
+                            <h3>Quinoa Veggie Stir-Fry</h3>
+                            <p class="ff-roboto">Quick, wholesome, and bursting with flavors, it's perfect for a healthy weeknight dinner.</p>
+                            <div class="card-content-bottom">
+                                <span>30 Min - easy prep - 3 serves</span>
+                                <a href="#" class="btn btn-3">View Recipe</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card relative">
+                        <img src="./assets/img/berry-recipe.png" alt="Berry Bliss Smoothie Bowl">
+                        <img class="vegan-tag" src="./assets/img/Vegan Tag.svg" alt="vegan tag">
+                        <div class="card-content">
+                            <h3>Berry Bliss Smoothie Bowl</h3>
+                            <p class="ff-roboto">This berry smoothie bowl is not only visually appealing but also a powerhouse of antioxidants.</p>
+                            <div class="card-content-bottom">
+                                <span>10 Min - easy prep - 2 serves</span>
+                                <a href="#" class="btn btn-3">View Recipe</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card relative">
+                        <img src="./assets/img/spaghetti-recipe.png" alt="Spaghetti Aglio e Olio">
+                        <img class="vegan-tag" src="./assets/img/Vegan Tag.svg" alt="vegan tag">
+                        <div class="card-content">
+                            <h3>Spaghetti Aglio e Olio</h3>
+                            <p class="ff-roboto">A minimalist yet flavorful dish with garlic, olive oil, and a hint of red pepper flakes.</p>
+                            <div class="card-content-bottom">
+                                <span>20 min - easy prep - 2 serves</span>
+                                <a href="#" class="btn btn-3">View Recipe</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card relative">
+                        <img src="./assets/img/grilled-recipe.png" alt="Grilled Veggies with Sauce">
+                        <img class="vegan-tag" src="./assets/img/Vegan Tag.svg" alt="vegan tag">
+                        <div class="card-content">
+                            <h3>Grilled Veggies with Sauce</h3>
+                            <p class="ff-roboto">Served with a zesty chimichurri sauce its a perfect addition to your outdoor gatherings.</p>
+                            <div class="card-content-bottom">
+                                <span>25 Min - medium prep - 6 serves</span>
+                                <a href="#" class="btn btn-3">View Recipe</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="about-us" id="nav-about">
+            <div class="container">
+                <div class="content">
+                    <a href="#" class="btn btn-2">About Us</a>
+                    <h2>OUR CULINARY<span>CHRONICLE</span></h2>
+                    <p class="ff-roboto">Our journey is crafted with dedication, creativity, and an unrelenting commitment to delivering delightful culinary experiences. Join us in savoring the essence of every dish and the stories that unfold.</p>
+                    <a href="#" class="btn btn-3">Read More</a>
+                </div>
+            </div>
+        </section>
+    
+        <section class="subscribe">
+            <div class="container">
+                <div class="content">
+                    <p class="ff-roboto tagline">SUBSCRIBE</p>
+                    <h2>JOIN THE FUN<span>SUBSCRIBE NOW!</span></h2>
+                    <p class="ff-roboto subs">Subscribe to our newsletter for a weekly serving of recipes, cooking tips, and exclusive insights straight to your inbox.</p>
+                </div>
+                <form class="subscribe-form">
+                    <div class="input-wrapper">
+                        <input type="email" id="email" name="email" placeholder="Email Address" maxlength="32" required>
+                        <button type="submit" class="btn btn-subscribe">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="content">
+                <a href="#" class="logo">
+                    <img src="./assets/img/cd-logo-bw.svg" alt="Cooks Delight Logo">
+                </a>
+    
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#nav-recipe">Recipes</a></li>
+                        <li><a href="#nav-tips">Cooking Tips</a></li>
+                        <li><a href="#nav-about">About Us</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="socials">
+                    <a href=""><i class='bx bxl-tiktok'></i></a>
+                    <a href=""><i class='bx bxl-facebook'></i></a>
+                    <a href=""><i class='bx bxl-instagram'></i></a>
+                    <a href=""><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+            <div class="cr">
+                <p class="ff-roboto">Copyright: © 2024 Cooks Delight.</p>
+            </div>
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="./assets/js/main.js"></script>
+</body>
+</html>

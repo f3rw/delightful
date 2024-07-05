@@ -1,0 +1,537 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Roboto:wght@300;400;500&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+
+    /*========== Colors ==========*/
+    --dark-color: #262522;
+    --light-color: #FFFBF2;
+    --bg-color: #F0EBE1;
+    --primary-color1: #9FDC26;
+    --primary-color2: #F29C33;
+    --primary-color3: #EE6352;
+    --primary-color4: #C4E5FC;
+    --border-color: #26252229;
+
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --ff-montserrat: "Montserrat", sans-serif;
+    --ff-roboto: "Roboto", sans-serif;
+    --h1-font-size: 5rem;
+    --h2-font-size: 2.5rem;
+    --h3-font-size: 1.5rem;
+    --p1-font-size: 1.3125rem;
+    --p2-font-size: 1rem;
+    --subtitle-font-size: 1.125rem;
+    --tagline-font-size: 1.125rem;
+    --btn-font-size: .875rem;
+    --small-font-size: .75rem;
+    --link-font-size: 1rem;
+    --bold-font-size: 1rem;
+    
+    /*========== Font weight ==========*/
+    --font-light: 300;
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+    --font-extra-bold: 800;
+}
+
+
+
+/*=============== BASE ===============*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--dark-color);
+  background-color: var(--bg-color);
+  font-family: var(--ff-montserrat);
+}
+
+ul {
+  list-style: none;
+}
+  
+a {
+  color: var(--dark-color);
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1312px;
+  margin: 1rem auto;
+  border: 1px solid var(--border-color);
+  border-radius: 2rem;
+}
+
+.btn {
+  font-family: var(--ff-roboto);
+  font-size: var(--btn-font-size);
+  font-weight: var(--font-medium);
+  border: 1px solid var(--dark-color);
+  border-radius: 1.5rem;
+  padding: .75rem 1.5rem;
+  text-transform: uppercase;
+}
+
+.btn-2 {
+  background-color: var(--primary-color3);
+  color: var(--bg-color);
+  border: 1px solid #26252243;
+  border-radius: .75rem;
+  padding: 4px 8px;
+  cursor: default;
+}
+
+.btn-3:hover {
+  background-color: transparent;
+  color: var(--primary-color3);
+  transition: all .5s ease-out;
+}
+
+.ff-roboto {
+  font-family: var(--ff-roboto);
+}
+
+.subtitle {
+  font-size: var(--subtitle-font-size);
+  font-weight: var(--font-semi-bold);
+}
+/*=============== HEADER ===============*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--bg-color);
+  z-index: 1000; /* Ensure the header is above other elements */
+  transition: all 0.5s; /* Smooth transition for background color change */
+}
+
+header .container {
+  height: 70px;
+  padding: 1.5rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: var(--btn-font-size);
+  font-weight: var(--font-medium);
+  font-family: var(--ff-roboto);
+  background-color: var(--bg-color);
+}
+
+.navbar ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar ul li a {
+  position: relative;
+}
+
+.navbar ul li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px; 
+  width: 0;
+  height: 2px; 
+  background: var(--primary-color3); 
+  transition: width 0.3s ease; 
+}
+
+.navbar ul li a:hover::after {
+  width: 100%; 
+}
+
+header .navbar ul li a.active {
+  border-bottom: 2px solid var(--primary-color3);
+  padding-bottom: 1px;
+}
+
+.auth {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn-subscribe {
+  background-color: var(--dark-color);
+  color: var(--bg-color);
+}
+
+.btn-subscribe:hover {
+  color: var(--dark-color);
+  background-color: var(--bg-color);
+  transition: all .5s ease-out;
+}
+
+/*=============== HERO ===============*/
+
+.hero .container {
+  margin-top: 102px;
+  padding: 120px 220px;
+  background: url(/assets/img/hero-bg-image.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero .container .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 870px;
+}
+
+.hero .container .content h1 {
+  color: var(--bg-color);
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-bold);
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.hero .container .content h1 span {
+  display: block;
+}
+
+.hero .container .content p {
+  color: var(--bg-color);
+  font-size: var(--p1-font-size);
+  font-weight: var(--font-regular);
+  margin-top: .75rem;
+  padding: 0 15rem;
+}
+
+.hero .container .content a {
+  color: var(--dark-color);
+  background-color: var(--primary-color2);
+  margin-top: 40px;
+}
+
+.hero .container .content a:hover {
+  color: var(--primary-color2);
+  background-color: var(--dark-color);
+  transition: all .5s ease-out;
+}
+
+/*=============== EXPLORE ===============*/
+
+.explore .container {
+  background-color: var(--primary-color4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.explore .container .left {
+  margin-top: 11.75rem;
+  margin-bottom: 2.5rem;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.explore .container .left h2 {
+  font-size: var(--h2-font-size);
+  line-height: 1;
+}
+
+.explore .container .left h2 span {
+  display: block;
+}
+
+.explore .container .left p {
+  font-weight: var(--font-light);
+  margin-bottom: 1rem;
+}
+
+.explore .container .right {
+  width: 500px;
+}
+
+.explore .container .right ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.explore .container .right ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #26252243;
+  padding-bottom: 1rem;
+}
+
+/*=============== FEATURED RECIPES ===============*/
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.top h2 {
+  margin-left: 2.5rem;
+  font-size: var(--h2-font-size);
+}
+
+.top .btn-wrapper {
+  margin-right: 1rem;
+}
+
+.top button {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  border: 1px solid var(--dark-color);
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.slider .card {
+  max-width: 630px;
+  margin-bottom: 1rem;
+  background-color: var(--light-color);
+  border: 1px solid #26252243;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.card-content {
+  margin: 1.5rem;
+}
+
+.card-content h3 {
+  margin-bottom: .75rem;
+  font-size: var(--h3-font-size);
+}
+
+.card-content p {
+  margin-bottom: 2.5rem;
+  font-weight: var(--font-light);
+}
+
+.card-content-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-bold);
+}
+
+.slider-wrapper {
+  overflow: hidden;
+  height: 440px;
+  margin: 0 1rem 1rem 1rem;
+}
+
+/*=============== RECIPES ===============*/
+.recipes .container {
+  border: none;
+}
+
+.recipes .title {
+  max-width: 428px;
+  margin: 5rem auto 2.5rem auto;
+  text-align: center;
+}
+
+.recipes .title h2 {
+  margin-top: 0.5rem;
+  font-size: var(--h2-font-size);
+  line-height: 1;
+}
+
+.recipes .title h2 span {
+  display: block;
+}
+
+.recipes .title p {
+  margin-top: .75rem;
+  font-size: var(--p2-font-size);
+  font-weight: var(--font-light);
+}
+
+.recipes .cards {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 1rem;
+margin-bottom: -1rem;
+}
+
+.recipes .card {
+  flex-basis: 425px;
+  margin-bottom: 1rem;
+  background-color: var(--light-color);
+  border: 1px solid #26252243;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.relative {
+  position: relative;
+}
+
+.vegan-tag {
+  position: absolute;
+  top: 184px;
+  left: 338px;
+}
+
+/*=============== ABOUT US ===============*/
+.about-us .container {
+  margin-top: 142px;
+  height: 700px;
+  background-image: url(/assets/img/about-us.png);
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.about-us .container .content {
+  width: 385px;
+  margin-top: 66px;
+  margin-left: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.about-us .container .content h2 {
+  font-size: var(--h2-font-size);
+  line-height: 1;
+}
+
+.about-us .container .content h2 span {
+  display: block;
+}
+
+.about-us .container .content p {
+  font-weight: var(--font-light);
+}
+
+/*=============== SUBSCRIBE ===============*/
+.subscribe .container {
+  background-color: var(--primary-color3);
+}
+
+.subscribe .container .content {
+  max-width: 770px;
+  color: var(--light-color);
+  margin: 64px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: .75rem;
+}
+
+.subscribe .container .content p.tagline {
+  font-size: var(--tagline-font-size);
+}
+
+.subscribe .container .content h2 {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-extra-bold);
+  line-height: 1;
+}
+
+.subscribe .container .content h2 span {
+  display: block;
+}
+
+.subscribe .container .content p.subs {
+  font-size: var(--p1-font-size);
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem; 
+}
+
+.input-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.input-wrapper input[type="email"] {
+  width: 526px;
+  padding: 13px 24px;
+  font-family: var(--ff-roboto);
+  font-size: 21px;
+  border: 1px solid #262522;
+  border-radius: 24px;
+}
+
+.input-wrapper button {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  cursor: pointer;
+}
+
+/*=============== FOOTER ===============*/
+footer .container {
+  color: var(--light-color);
+  padding: 1.5rem 1.25rem;
+  background-color: var(--dark-color);
+  text-transform: uppercase;
+}
+
+footer .container .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #858482;
+  font-size: var(--btn-font-size);
+  font-weight: var(--font-medium);
+}
+
+i {
+  font-size: 24px;
+}
+
+footer a {
+  color: var(--light-color);
+}
+
+footer .socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cr {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: var(--small-font-size);
+  color: #747373;
+}
+
+
