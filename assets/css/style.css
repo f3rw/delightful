@@ -114,8 +114,8 @@ a {
   left: 0;
   width: 100%;
   background-color: var(--bg-color);
-  z-index: 1000; /* Ensure the header is above other elements */
-  transition: all 0.5s; /* Smooth transition for background color change */
+  z-index: 1000; 
+  transition: all 0.5s; 
 }
 
 header .container {
@@ -182,7 +182,7 @@ header .navbar ul li a.active {
 .hero .container {
   margin-top: 102px;
   padding: 120px 220px;
-  background: url(/assets/img/hero-bg-image.png);
+  background: url(../img/hero-bg-image.png);
   background-size: cover;
   background-position: center;
 }
@@ -406,7 +406,7 @@ margin-bottom: -1rem;
 .about-us .container {
   margin-top: 142px;
   height: 700px;
-  background-image: url(/assets/img/about-us.png);
+  background-image: url(../img/about-us.png);
   background-repeat: no-repeat;
   background-position: 50%;
 }
